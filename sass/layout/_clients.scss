@@ -1,0 +1,28 @@
+.clients {
+  padding-top: var(--accent-padding-top);
+  padding-bottom: var(--accent-padding-bottom);
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 90px;
+    background-color: var(--background-color);
+    border: 1px solid var(--color-link);
+    border-radius: 4px;
+    fill: var(--color-link);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      border: 1px solid var(--accent-color);
+      fill: var(--accent-color);
+    }
+  }
+}
