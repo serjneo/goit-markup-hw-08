@@ -1,8 +1,9 @@
 .hero {
   background-color: var(--footer-color);
+  width: 100%;
   max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -10,7 +11,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/hero/bg-hero.jpg);
+    url(../images/hero/bg-hero-desktop.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,19 +20,37 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     & {
-      background-image: url(../images/hero/bg-hero@2x.jpg);
+      background-image: url(../images/hero/bg-hero-desktop@2x.jpg);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    & {
+      padding-top: 200px;
+      padding-bottom: 200px;
     }
   }
   &__title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
+    text-align: center;
     color: var(--background-color);
     text-transform: uppercase;
-    width: 696px;
     margin: 0 auto;
     margin-bottom: 30px;
+    @media screen and (min-width: 480px) {
+      & {
+        width: 360px;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      & {
+        font-size: 44px;
+        line-height: 1.36;
+        width: 696px;
+      }
+    }
   }
   &__btn {
     display: inline-block;
