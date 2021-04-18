@@ -741,6 +741,8 @@ img {
   margin-right: auto;
   margin-left: auto;
   height: 400px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-hero-mobile.jpg);
 }
 
@@ -764,6 +766,8 @@ img {
 
 @media screen and (min-width: 1200px) {
   .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     max-width: 1600px;
     height: 600px;
     background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/bg-hero-desktop.jpg);
@@ -782,19 +786,12 @@ img {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 118px 44px;
 }
 
 @media screen and (min-width: 768px) {
   .hero__container {
     padding-left: 204px;
     padding-right: 204px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero__container {
-    padding: 200px 252px;
   }
 }
 
@@ -809,8 +806,15 @@ img {
   color: var(--background-color);
 }
 
+@media screen and (min-width: 480px) {
+  .hero__title {
+    width: 360px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .hero__title {
+    width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
@@ -1027,8 +1031,7 @@ img {
 
 .card-employee {
   width: 100%;
-  padding-top: 30px;
-  padding-bottom: 24px;
+  padding: 30px 32px 24px 32px;
   text-align: center;
   background-color: var(--background-color);
   border-radius: 4px;
@@ -1235,6 +1238,12 @@ img {
 @media screen and (max-width: 768px) {
   .footer-social-list {
     margin-top: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-social-list {
+    align-items: flex-start;
   }
 }
 

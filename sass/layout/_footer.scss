@@ -77,6 +77,10 @@
     margin-top: 60px;
   }
 
+  @media screen and (min-width: 1200px) {
+    align-items: flex-start;
+  }
+
   &__list {
     margin-top: 20px;
     flex-wrap: nowrap;
